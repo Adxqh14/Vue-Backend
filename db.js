@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize');
 require('dotenv').config();
 
 const sequelize = new Sequelize(
-  process.env.DB_ONEPIECE,   // nombre de tu DB, ej: onepiece
+  process.env.DB_NAME,   // nombre de tu DB, ej: onepiece
   process.env.DB_USER,   // tu usuario de PostgreSQL
   process.env.DB_PASS,   // tu contraseña
   {
